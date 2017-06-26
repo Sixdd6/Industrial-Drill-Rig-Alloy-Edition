@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+  
+  <!-- =========== Base Recipes =========== -->
+  
+  <RecipeDef Name="DrillRecipeBase" Abstract="True">
+	<defName>DrillRecipeBase</defName>
+	<description>Locate and extract minerals from within the earth.</description>
+	<jobString>Mining.</jobString>
+	<workSpeedStat>MiningSpeed</workSpeedStat>
+    <workSkill>Mining</workSkill>
+    <workSkillLearnFactor>5</workSkillLearnFactor>
+	<effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>WorkingSound_DrillRig</soundWorking>
+  </RecipeDef>
+	
+  <RecipeDef Name="DrillMetalRecipeBase" ParentName="DrillRecipeBase" Abstract="True">
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>IndustrialPDA</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <workAmount>1200</workAmount>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>IndustrialPDA</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>IndustrialDrillRig</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+	<defName>DrillGold</defName>
+	<label>Extract Gold</label>
+    <products>
+      <Gold>50</Gold>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+	<defName>DrillUranium</defName>
+	<label>Extract Uranium</label>
+    <products>
+      <Uranium>50</Uranium>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+	<defName>DrillSilver</defName>
+	<label>Extract Silver</label>
+    <products>
+      <Silver>50</Silver>
+    </products>
+  </RecipeDef>
+
+<!--  Begin Cupros Metals  -->
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+    <defName>DrillAluminum</defName>
+    <label>Extract Aluminum</label>
+    <products>
+      <IndustrialPDA>1</IndustrialPDA>
+      <CAL_Aluminum>10</CAL_Aluminum>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+    <defName>DrillCopper</defName>
+    <label>Extract Copper</label>
+    <products>
+      <IndustrialPDA>1</IndustrialPDA>
+      <EXP_Copper>10</EXP_Copper>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+    <defName>DrillLead</defName>
+    <label>Extract Lead</label>
+    <products>
+      <IndustrialPDA>1</IndustrialPDA>
+      <EXP_Lead>10</EXP_Lead>
+    </products>
+  </RecipeDef>        
+
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+    <defName>DrillTin</defName>
+    <label>Extract Tin</label>
+    <products>
+      <IndustrialPDA>1</IndustrialPDA>
+      <EXP_Tin>10</EXP_Tin>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="DrillMetalRecipeBase">
+  <defName>DrillJade</defName>
+  <label>Extract Jade</label>
+  <workAmount>6000</workAmount>
+    <products>
+      <Jade>10</Jade>
+    </products>
+  </RecipeDef>
+
+</RecipeDefs>
