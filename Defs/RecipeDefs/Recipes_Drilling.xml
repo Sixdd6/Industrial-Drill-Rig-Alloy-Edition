@@ -29,14 +29,14 @@
       <IndustrialPDA>1</IndustrialPDA>
     </products>
     <workAmount>1200</workAmount>
+    <recipeUsers>
+      <li>IndustrialDrillRig</li>
+    </recipeUsers>
     <fixedIngredientFilter>
       <thingDefs>
         <li>IndustrialPDA</li>
       </thingDefs>
     </fixedIngredientFilter>
-    <recipeUsers>
-      <li>IndustrialDrillRig</li>
-    </recipeUsers>
   </RecipeDef>
   
   <RecipeDef ParentName="DrillMetalRecipeBase">
