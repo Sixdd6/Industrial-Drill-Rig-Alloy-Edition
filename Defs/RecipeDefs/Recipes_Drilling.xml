@@ -25,6 +25,9 @@
         <count>1</count>
       </li>
     </ingredients>
+    <products>
+      <IndustrialPDA>1</IndustrialPDA>
+    </products>
     <workAmount>1200</workAmount>
     <fixedIngredientFilter>
       <thingDefs>
@@ -65,7 +68,6 @@
     <defName>DrillAluminum</defName>
     <label>Extract Aluminum</label>
     <products>
-      <IndustrialPDA>1</IndustrialPDA>
       <CAL_Aluminum>10</CAL_Aluminum>
     </products>
   </RecipeDef>
@@ -74,7 +76,6 @@
     <defName>DrillCopper</defName>
     <label>Extract Copper</label>
     <products>
-      <IndustrialPDA>1</IndustrialPDA>
       <EXP_Copper>10</EXP_Copper>
     </products>
   </RecipeDef>
@@ -83,7 +84,6 @@
     <defName>DrillLead</defName>
     <label>Extract Lead</label>
     <products>
-      <IndustrialPDA>1</IndustrialPDA>
       <EXP_Lead>10</EXP_Lead>
     </products>
   </RecipeDef>        
@@ -92,7 +92,6 @@
     <defName>DrillTin</defName>
     <label>Extract Tin</label>
     <products>
-      <IndustrialPDA>1</IndustrialPDA>
       <EXP_Tin>10</EXP_Tin>
     </products>
   </RecipeDef>
